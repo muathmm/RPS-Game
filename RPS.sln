@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPS", "RPS\RPS.csproj", "{F47BE463-935E-4B51-B9EE-0481E1409089}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPS", "RPS\RPS.csproj", "{F47BE463-935E-4B51-B9EE-0481E1409089}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPSGameTests", "RPSGameTests\RPSGameTests.csproj", "{9EA6EAB5-56AD-414D-B66A-AB37B2FAB073}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F47BE463-935E-4B51-B9EE-0481E1409089}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F47BE463-935E-4B51-B9EE-0481E1409089}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F47BE463-935E-4B51-B9EE-0481E1409089}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EA6EAB5-56AD-414D-B66A-AB37B2FAB073}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EA6EAB5-56AD-414D-B66A-AB37B2FAB073}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EA6EAB5-56AD-414D-B66A-AB37B2FAB073}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EA6EAB5-56AD-414D-B66A-AB37B2FAB073}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
