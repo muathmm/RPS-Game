@@ -5,7 +5,7 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPS", "RPS\RPS.csproj", "{F47BE463-935E-4B51-B9EE-0481E1409089}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPSGameTests", "RPSGameTests\RPSGameTests.csproj", "{9EA6EAB5-56AD-414D-B66A-AB37B2FAB073}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPSGameTests", "RPSGameTests\RPSGameTests.csproj", "{9EA6EAB5-56AD-414D-B66A-AB37B2FAB073}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
