@@ -34,12 +34,12 @@ namespace RPS
             if (result == 1)
             {
                 Console.WriteLine($"{player.Name} wins the round!");
-                player.Score++;
+             
             }
             else if (result == -1)
             {
                 Console.WriteLine($"{aiPlayer.Name} wins the round!");
-                aiPlayer.Score++;
+                
             }
             else
             {
@@ -55,10 +55,12 @@ namespace RPS
                 (move1 == "p" && move2 == "r") ||
                 (move1 == "s" && move2 == "p"))
             {
+                player.Score++;
                 return 1;
             }
             else
             {
+                aiPlayer.Score++;
                 return -1;
             }
         }

@@ -46,5 +46,70 @@ namespace RPSGameTests
             // Assert
             Assert.Contains(result, new[] { "r", "p", "s" });
         }
+        [Fact]
+        public void TestCompareMoves_PlayerWins()
+        {
+            // Arrange
+            var player = new Player("Player");
+            var aiPlayer = new AIPlayer("AI");
+            var game = new RPSGame(player, aiPlayer);
+
+            // Act
+            int result = game.CompareMoves("r", "s"); 
+
+            // Assert
+            Assert.Equal(1, result); 
+        }
+
+        [Fact]
+        public void TestCompareMoves_AIWins()
+        {
+            // Arrange
+            var player = new Player("Player");
+            var aiPlayer = new AIPlayer("AI");
+            var game = new RPSGame(player, aiPlayer);
+
+            // Act
+            int result = game.CompareMoves("s", "r"); 
+
+            // Assert
+            Assert.Equal(-1, result);
+        }
+
+        [Fact]
+        public void TestUpdateScores_PlayerWinsRound()
+        {
+            // Arrange
+            var player = new Player("Player");
+            var aiPlayer = new AIPlayer("AI");
+            var game = new RPSGame(player, aiPlayer);
+
+            // Act
+            player.Score = 0;
+            aiPlayer.Score = 0;
+            game.CompareMoves("s", "p");
+
+            // Assert
+            Assert.Equal(1, player.Score);
+            Assert.Equal(0, aiPlayer.Score); 
+        }
+
+        [Fact]
+        public void TestUpdateScores_AIWinsRound()
+        {
+            // Arrange
+            var player = new Player("Player");
+            var aiPlayer = new AIPlayer("AI");
+            var game = new RPSGame(player, aiPlayer);
+
+            // Act
+            player.Score = 0;
+            aiPlayer.Score = 0;
+            game.CompareMoves("r", "p"); 
+
+            // Assert
+            Assert.Equal(0, player.Score); 
+            Assert.Equal(1, aiPlayer.Score);
+        }
     }
 }
